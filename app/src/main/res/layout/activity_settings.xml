@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="android.jonaswestman.workout.SettingsActivity"
+    android:id="@+id/settings_layout"
+    android:background="#ffc98778">
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:id="@+id/settings_week"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:autoText="false"
+        android:background="#ffb19182"
+        android:numeric="integer"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:id="@+id/settings_day"
+        android:layout_below="@+id/settings_week"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:autoText="false"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:background="#ffffd6c6" />
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:id="@+id/settings_title"
+        android:layout_below="@+id/settings_day"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:autoText="false"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:background="#ffb19182" />
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:id="@+id/settings_sets"
+        android:layout_below="@+id/settings_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:autoText="false"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:background="#ffffd6c6"
+        android:numeric="integer" />
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:id="@+id/settings_reps"
+        android:layout_below="@+id/settings_sets"
+        android:layout_alignLeft="@+id/settings_sets"
+        android:layout_alignStart="@+id/settings_sets"
+        android:background="#ffb19182"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:numeric="integer" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Workout"
+        android:id="@+id/settings_sendButton"
+        android:onClick="settingsSend"
+        android:layout_below="@+id/settings_reps"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Week:"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/settings_week"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffb19182"
+        android:gravity="center|left"
+        android:password="false"
+        android:phoneNumber="false" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Day:"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/settings_day"
+        android:layout_toStartOf="@+id/settings_day"
+        android:background="#ffffd6c6"
+        android:gravity="center|left" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Title:"
+        android:id="@+id/textView3"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/settings_title"
+        android:layout_toStartOf="@+id/settings_title"
+        android:background="#ffb19182"
+        android:gravity="center|left" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sets:"
+        android:id="@+id/textView4"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/settings_title"
+        android:layout_toStartOf="@+id/settings_title"
+        android:background="#ffffd6c6"
+        android:gravity="center|left" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Reps:"
+        android:id="@+id/textView5"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/settings_reps"
+        android:layout_toStartOf="@+id/settings_reps"
+        android:background="#ffb19182"
+        android:gravity="center|left" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Workout"
+        android:id="@+id/button"
+        android:onClick="removeWorkout"
+        android:layout_below="@+id/settings_reps"
+        android:layout_alignRight="@+id/settings_reps"
+        android:layout_alignEnd="@+id/settings_reps" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Number of entries in database:"
+        android:id="@+id/text_numofentries"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/settings_sendButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

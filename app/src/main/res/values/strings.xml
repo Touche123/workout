@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Workout</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_workout">WorkoutActivity</string>
+
+    <string name="button_monday">Monday</string>
+    <string name="button_tuesday">Tuesday</string>
+    <string name="button_wednesday">Wednesday</string>
+    <string name="button_thursday">Thursday</string>
+    <string name="button_friday">Friday</string>
+    <string name="text_day">Day</string>
+    <string name="text_exercise1">Excercise1</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+</resources>
